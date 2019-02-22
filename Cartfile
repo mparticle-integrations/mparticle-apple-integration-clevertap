@@ -1,2 +1,2 @@
-github "clevertap/clevertap-ios-sdk" ~> 3.3.0
+github "clevertap/clevertap-ios-sdk" ~> 3.4.1
 github "mparticle/mparticle-apple-sdk" ~> 7.8.0
