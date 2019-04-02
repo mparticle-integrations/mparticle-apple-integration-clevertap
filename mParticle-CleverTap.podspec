@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "9.0"
     s.ios.source_files      = 'mParticle-CleverTap/*.{h,m}'
-    s.ios.dependency 'mParticle-Apple-SDK', '~> 7.8.0'
+    s.ios.dependency 'mParticle-Apple-SDK/mParticle', '~> 7.9.0'
     s.ios.dependency 'CleverTap-iOS-SDK', '~> 3.4.1'
 
     s.tvos.deployment_target = "9.0"
