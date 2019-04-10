@@ -16,7 +16,7 @@ This repository contains the [CleverTap](https://www.clevertap.com/) integration
     github 'mparticle-integrations/mparticle-apple-integration-clevertap' ~> 1.2.3
     ```
 
-2. Follow the mParticle iOS SDK [quick-start](https://github.com/mParticle/mparticle-apple-sdk), then rebuild and launch your app, and verify that you see `"Included kits: { Example }"` in your Xcode console 
+2. Follow the mParticle iOS SDK [quick-start](https://github.com/mParticle/mparticle-apple-sdk), then rebuild and launch your app, and verify that you see `"Included kits: { CleverTap }"` in your Xcode console 
 
 > (This requires your mParticle log level to be at least Debug)
 
@@ -24,7 +24,7 @@ This repository contains the [CleverTap](https://www.clevertap.com/) integration
 
 ### Documentation
 
-[Example integration](https://docs.mparticle.com/integrations/REPLACEME/event/)
+[CleverTap integration](https://docs.mparticle.com/integrations/clevertap/event/)
 
 ### License
 
