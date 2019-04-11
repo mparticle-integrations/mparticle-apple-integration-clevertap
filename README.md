@@ -1,6 +1,6 @@
 ## CleverTap Kit Integration
 
-This repository contains the [CleverTap](https://www.clevertap.com/) integration for the [mParticle Apple SDK](https://github.com/mParticle/mparticle-apple-sdk).
+This repository contains the [CleverTap](https://clevertap.com/) integration for the [mParticle Apple SDK](https://github.com/mParticle/mparticle-apple-sdk).
 
 ### Adding the integration
 
