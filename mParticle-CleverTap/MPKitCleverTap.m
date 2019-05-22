@@ -51,7 +51,7 @@ NSString *const kCTChargedID = @"Charged ID";
         NSString *region = [self->_configuration objectForKey:ctRegion];
         [CleverTap setCredentialsWithAccountID:accountID token:accountToken region:region];
         [[CleverTap sharedInstance] notifyApplicationLaunchedWithOptions:nil];
-
+        
         self->_started = YES;
         
         NSString *cleverTapID = [[CleverTap sharedInstance] profileGetCleverTapID];
@@ -84,9 +84,9 @@ NSString *const kCTChargedID = @"Charged ID";
     return execStatus;
 }
 #endif
- - (MPKitExecStatus *)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo {
-     [[CleverTap sharedInstance] handleNotificationWithData:userInfo];
-     return [self execStatus:MPKitReturnCodeSuccess];
+- (MPKitExecStatus *)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo {
+    [[CleverTap sharedInstance] handleNotificationWithData:userInfo];
+    return [self execStatus:MPKitReturnCodeSuccess];
 }
 
 - (nonnull MPKitExecStatus *)handleActionWithIdentifier:(nullable NSString *)identifier
@@ -101,14 +101,14 @@ NSString *const kCTChargedID = @"Charged ID";
     return [self execStatus:MPKitReturnCodeSuccess];
 }
 
- - (MPKitExecStatus *)setDeviceToken:(NSData *)deviceToken {
-     [[CleverTap sharedInstance] setPushToken:deviceToken];
-     return [self execStatus:MPKitReturnCodeSuccess];
+- (MPKitExecStatus *)setDeviceToken:(NSData *)deviceToken {
+    [[CleverTap sharedInstance] setPushToken:deviceToken];
+    return [self execStatus:MPKitReturnCodeSuccess];
 }
 
 - (nonnull MPKitExecStatus *)openURL:(nonnull NSURL *)url options:(nullable NSDictionary<NSString *, id> *)options {
-     [[CleverTap sharedInstance] handleOpenURL:url sourceApplication:nil];
-     return [self execStatus:MPKitReturnCodeSuccess];
+    [[CleverTap sharedInstance] handleOpenURL:url sourceApplication:nil];
+    return [self execStatus:MPKitReturnCodeSuccess];
 }
 
 - (nonnull MPKitExecStatus *)openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nullable id)annotation {
@@ -174,7 +174,7 @@ NSString *const kCTChargedID = @"Charged ID";
 }
 
 - (nonnull MPKitExecStatus *)onIdentifyComplete:(FilteredMParticleUser *)user request:(FilteredMPIdentityApiRequest *)request {
-     return [self updateUser:user request:request isLogin:NO];
+    return [self updateUser:user request:request isLogin:NO];
 }
 
 - (nonnull MPKitExecStatus *)onModifyComplete:(FilteredMParticleUser *)user request:(FilteredMPIdentityApiRequest *)request {
@@ -211,41 +211,41 @@ NSString *const kCTChargedID = @"Charged ID";
 
 #pragma mark e-Commerce
 - (MPKitExecStatus *)logCommerceEvent:(MPCommerceEvent *)commerceEvent {
-     MPKitExecStatus *execStatus = [[MPKitExecStatus alloc] initWithSDKCode:[[self class] kitCode] returnCode:MPKitReturnCodeSuccess forwardCount:0];
-     if (commerceEvent.action == MPCommerceEventActionPurchase) {
-         NSMutableDictionary *details = [NSMutableDictionary new];
-         NSMutableArray *items = [NSMutableArray new];
-         
-         NSDictionary *transactionAttributes = [commerceEvent.transactionAttributes beautifiedDictionaryRepresentation];
-         if (transactionAttributes) {
-             [details addEntriesFromDictionary:transactionAttributes];
-         }
-         NSDictionary *commerceEventAttributes = [commerceEvent beautifiedAttributes];
-         NSArray *keys = @[kMPExpCECheckoutOptions, kMPExpCECheckoutStep, kMPExpCEProductListName, kMPExpCEProductListSource];
-         
-         for (NSString *key in keys) {
-             if (commerceEventAttributes[key]) {
-                 details[key] = commerceEventAttributes[key];
-             }
-         }
-         NSString *transactionId = commerceEventAttributes[kCTTransactionID];
-         if (transactionId) {
-             details[kCTChargedID] = transactionId;
-         }
-         NSArray *products = commerceEvent.products;
-         for (MPProduct *product in products) {
-             [items addObject: [product beautifiedAttributes]];
-         }
-         [[CleverTap sharedInstance] recordChargedEventWithDetails:details andItems:items];
-         [execStatus incrementForwardCount];
-     } else {
-         NSArray *expandedInstructions = [commerceEvent expandedInstructions];
-         for (MPCommerceEventInstruction *commerceEventInstruction in expandedInstructions) {
-             [self logEvent:commerceEventInstruction.event];
-             [execStatus incrementForwardCount];
-         }
-     }
-     return execStatus;
+    MPKitExecStatus *execStatus = [[MPKitExecStatus alloc] initWithSDKCode:[[self class] kitCode] returnCode:MPKitReturnCodeSuccess forwardCount:0];
+    if (commerceEvent.action == MPCommerceEventActionPurchase) {
+        NSMutableDictionary *details = [NSMutableDictionary new];
+        NSMutableArray *items = [NSMutableArray new];
+        
+        NSDictionary *transactionAttributes = [commerceEvent.transactionAttributes beautifiedDictionaryRepresentation];
+        if (transactionAttributes) {
+            [details addEntriesFromDictionary:transactionAttributes];
+        }
+        NSDictionary *commerceEventAttributes = [commerceEvent beautifiedAttributes];
+        NSArray *keys = @[kMPExpCECheckoutOptions, kMPExpCECheckoutStep, kMPExpCEProductListName, kMPExpCEProductListSource];
+        
+        for (NSString *key in keys) {
+            if (commerceEventAttributes[key]) {
+                details[key] = commerceEventAttributes[key];
+            }
+        }
+        NSString *transactionId = commerceEventAttributes[kCTTransactionID];
+        if (transactionId) {
+            details[kCTChargedID] = transactionId;
+        }
+        NSArray *products = commerceEvent.products;
+        for (MPProduct *product in products) {
+            [items addObject: [product beautifiedAttributes]];
+        }
+        [[CleverTap sharedInstance] recordChargedEventWithDetails:details andItems:items];
+        [execStatus incrementForwardCount];
+    } else {
+        NSArray *expandedInstructions = [commerceEvent expandedInstructions];
+        for (MPCommerceEventInstruction *commerceEventInstruction in expandedInstructions) {
+            [self logEvent:commerceEventInstruction.event];
+            [execStatus incrementForwardCount];
+        }
+    }
+    return execStatus;
 }
 
 #pragma mark Events
@@ -257,7 +257,7 @@ NSString *const kCTChargedID = @"Charged ID";
 - (MPKitExecStatus *)logScreen:(MPEvent *)event {
     NSString *screenName = event.name;
     if (!screenName) {
-         return [self execStatus:MPKitReturnCodeRequirementsNotMet];
+        return [self execStatus:MPKitReturnCodeRequirementsNotMet];
     }
     [[CleverTap sharedInstance] recordScreenView:screenName];
     return [self execStatus:MPKitReturnCodeSuccess];
