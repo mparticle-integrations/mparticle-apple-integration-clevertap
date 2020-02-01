@@ -10,6 +10,7 @@
 NSString *const ctAccountID = @"AccountID";
 NSString *const ctAccountToken = @"AccountToken";
 NSString *const ctRegion = @"Region";
+NSString *const kUserIdField = @"userIdField";
 NSString *const ctCleverTapIdIntegrationKey = @"clevertap_id_integration_setting";
 NSString *const kCTTransactionID = @"Transaction Id";
 NSString *const kCTChargedID = @"Charged ID";
@@ -186,9 +187,13 @@ NSString *const kCTChargedID = @"Charged ID";
     NSMutableDictionary *userIDsCopy = (request.userIdentities != nil) ? [request.userIdentities copy] : [NSDictionary new];
     NSMutableDictionary *profile = [NSMutableDictionary new];
     
-    if (userIDsCopy[@(MPUserIdentityCustomerId)]) {
+    NSString *userIdField = [self->_configuration objectForKey:kUserIdField];
+    if ([userIdField isEqualToString:@"mpid"]) {
+        profile[@"Identity"] = [user.userId stringValue];
+    } else if (userIDsCopy[@(MPUserIdentityCustomerId)]) {
         profile[@"Identity"] = userIDsCopy[@(MPUserIdentityCustomerId)];
     }
+
     if (userIDsCopy[@(MPUserIdentityEmail)]) {
         profile[@"Email"] = userIDsCopy[@(MPUserIdentityEmail)];
     }
