@@ -250,7 +250,7 @@ NSString *const kCTChargedID = @"Charged ID";
 
 #pragma mark Events
 - (MPKitExecStatus *)logEvent:(MPEvent *)event {
-    [[CleverTap sharedInstance] recordEvent:event.name withProps:event.info];
+    [[CleverTap sharedInstance] recordEvent:event.name withProps:event.customAttributes];
     return [self execStatus:MPKitReturnCodeSuccess];
 }
 
