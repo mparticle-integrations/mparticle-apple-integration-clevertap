@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "mParticle-CleverTap"
-    s.version          = "7.15.10"
+    s.version          = "7.15.11"
     s.summary          = "CleverTap integration for mParticle"
 
     s.description      = <<-DESC
