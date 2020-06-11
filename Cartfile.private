@@ -1,0 +1,4 @@
+github "erikdoe/ocmock"
+github "Quick/Quick"
+github "Quick/Nimble"
+github "SDWebImage/SDWebImage"
