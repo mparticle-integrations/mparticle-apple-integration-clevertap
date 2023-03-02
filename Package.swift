@@ -22,8 +22,7 @@ let package = Package(
         .target(
             name: "mParticle-CleverTap",
             dependencies: ["mParticle-Apple-SDK", "CleverTapSDK"],
-            path: "mParticle-CleverTap",
-            exclude: ["Info.plist", "mParticle_CleverTap.h"]
+            path: "mParticle-CleverTap"
         )
     ]
 )
