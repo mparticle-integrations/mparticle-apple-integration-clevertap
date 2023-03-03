@@ -1,14 +1,9 @@
 #import "MPKitCleverTap.h"
 
-
-#if SWIFT_PACKAGE
-@import CleverTapSDK;
-#else
 #if defined(__has_include) && __has_include(<CleverTapSDK/CleverTap.h>)
 #import <CleverTapSDK/CleverTap.h>
 #else
 #import "CleverTap.h"
-#endif
 #endif
 
 NSString *const ctAccountID = @"AccountID";
