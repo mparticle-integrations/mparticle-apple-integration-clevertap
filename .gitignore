@@ -67,3 +67,7 @@ fastlane/test_output
 **/Cartfile.resolved
 **/Pods
 KitsExample
+
+# Swift Package Manager
+Package.resolved
+.build

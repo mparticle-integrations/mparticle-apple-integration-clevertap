@@ -1,6 +1,5 @@
 #import "MPKitCleverTap.h"
 
-
 #if defined(__has_include) && __has_include(<CleverTapSDK/CleverTap.h>)
 #import <CleverTapSDK/CleverTap.h>
 #else
