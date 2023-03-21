@@ -7,13 +7,13 @@ This repository contains the [CleverTap](https://clevertap.com/) integration for
 1. Add the kit dependency to your app's Podfile, Cartfile, or through using SPM:
 
     ```
-    pod 'mParticle-CleverTap', '~> 7.0'
+    pod 'mParticle-CleverTap', '~> 8.0'
     ```
 
     OR
 
     ```
-    github "mparticle-integrations/mparticle-apple-integration-clevertap" ~> 7.0
+    github "mparticle-integrations/mparticle-apple-integration-clevertap" ~> 8.0
     ```
     
     OR
