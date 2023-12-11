@@ -16,7 +16,7 @@ let package = Package(
                .upToNextMajor(from: "8.0.0")),
       .package(name: "CleverTapSDK",
                url: "https://github.com/CleverTap/clevertap-ios-sdk",
-               .upToNextMajor(from: "4.2.0")),
+               .upToNextMajor(from: "5.2.0")),
     ],
     targets: [
         .target(
