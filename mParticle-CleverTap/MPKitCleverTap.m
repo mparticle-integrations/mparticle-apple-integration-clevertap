@@ -14,7 +14,7 @@ NSString *const ctCleverTapIdIntegrationKey = @"clevertap_id_integration_setting
 NSString *const kCTTransactionID = @"Transaction Id";
 NSString *const kCTChargedID = @"Charged ID";
 NSString *const libName = @"mParticle-iOS";
-int const libVersion = 80101;
+int const libVersion = 80200;
 
 @implementation MPKitCleverTap
 
@@ -56,7 +56,8 @@ int const libVersion = 80101;
         
         self->_started = YES;
         
-        [self setLibrary:libName libVersion:libVersion];
+        [clevertap setLibrary:libName];
+        [clevertap setCustomSdkVersion:libName version:libVersion];
         
         NSString *cleverTapID = [[CleverTap sharedInstance] profileGetCleverTapID];
         if (cleverTapID) {
@@ -275,12 +276,6 @@ int const libVersion = 80101;
 - (MPKitExecStatus *)setOptOut:(BOOL)optOut {
     [[CleverTap sharedInstance] setOptOut:optOut];
     return [self execStatus:MPKitReturnCodeSuccess];
-}
-
-#pragma mark SetLibrary
-- (nonnull MPKitExecStatus *)setLibrary:(nonnull NSString *)libName libVersion:(int)libVersion{
-    [clevertap setLibrary:libName];
-    [clevertap setCustomSdkVersion:libName version:libVersion];
 }
 
 @end
