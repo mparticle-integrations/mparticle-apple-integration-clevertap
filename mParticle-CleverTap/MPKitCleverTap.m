@@ -14,7 +14,7 @@ NSString *const ctCleverTapIdIntegrationKey = @"clevertap_id_integration_setting
 NSString *const kCTTransactionID = @"Transaction Id";
 NSString *const kCTChargedID = @"Charged ID";
 NSString *const libName = @"mParticle-iOS";
-int const libVersion = 80200;
+int const libVersion = 80101;
 
 @implementation MPKitCleverTap
 
