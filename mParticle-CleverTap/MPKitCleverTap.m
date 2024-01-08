@@ -13,6 +13,8 @@ NSString *const kUserIdField = @"userIdField";
 NSString *const ctCleverTapIdIntegrationKey = @"clevertap_id_integration_setting";
 NSString *const kCTTransactionID = @"Transaction Id";
 NSString *const kCTChargedID = @"Charged ID";
+NSString *const kLibName = @"mParticle-iOS";
+NSString *const kLibVersion = @"8.2.0";
 
 @implementation MPKitCleverTap
 
@@ -46,10 +48,12 @@ NSString *const kCTChargedID = @"Charged ID";
 - (void)start {
     static dispatch_once_t kitPredicate;
     dispatch_once(&kitPredicate, ^{
-        NSString *accountID = [self->_configuration objectForKey:ctAccountID ];
+        NSString *accountID = [self->_configuration objectForKey:ctAccountID];
         NSString *accountToken = [self->_configuration objectForKey:ctAccountToken];
         NSString *region = [self->_configuration objectForKey:ctRegion];
         [CleverTap setCredentialsWithAccountID:accountID token:accountToken region:region];
+        [[CleverTap sharedInstance] setLibrary:kLibName];
+        [[CleverTap sharedInstance] setCustomSdkVersion:kLibName version:[self.class intVersion:kLibVersion]];
         [[CleverTap sharedInstance] notifyApplicationLaunchedWithOptions:nil];
         
         self->_started = YES;
@@ -271,6 +275,18 @@ NSString *const kCTChargedID = @"Charged ID";
 - (MPKitExecStatus *)setOptOut:(BOOL)optOut {
     [[CleverTap sharedInstance] setOptOut:optOut];
     return [self execStatus:MPKitReturnCodeSuccess];
+}
+
+#pragma mark Private
++ (int)intVersion:(NSString *)version {
+    NSArray *split = [version componentsSeparatedByString:@"."];
+    if (split.count != 3) {
+        // Something went wrong (this should never happen), so return a default
+        return 0;
+    }
+    
+    NSString *string = [NSString stringWithFormat:@"%d%02d%02d", [split[0] intValue], [split[1] intValue], [split[2] intValue]];
+    return [string intValue];
 }
 
 @end

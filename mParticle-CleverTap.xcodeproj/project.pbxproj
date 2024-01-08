@@ -3,22 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D076C318218E3DEE00185E1A /* CleverTapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D076C317218E3DEE00185E1A /* CleverTapSDK.framework */; };
-		D076C320218E413700185E1A /* mParticle_CleverTapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D076C31F218E413700185E1A /* mParticle_CleverTapTests.m */; };
+		1F580D937EEC122B7398C552 /* Pods_mParticle_CleverTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251DBA0D07A71504E1E5C8D5 /* Pods_mParticle_CleverTap.framework */; };
+		25EB6A0B851257A65EF0CD9D /* Pods_mParticle_CleverTapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DD41C16CA98EA024D6779E /* Pods_mParticle_CleverTapTests.framework */; };
+		53AF89632B48A13200664B6B /* mParticle_VersionToIntTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AF89622B48A13200664B6B /* mParticle_VersionToIntTest.m */; };
+		53F201D92B4893020030CA08 /* mParticle_CleverTapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D076C31F218E413700185E1A /* mParticle_CleverTapTests.m */; };
 		DBB01A601DC1478A00A7B188 /* mParticle_CleverTap.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB01A5E1DC1478A00A7B188 /* mParticle_CleverTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB01A681DC1480700A7B188 /* MPKitCleverTap.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB01A661DC1480700A7B188 /* MPKitCleverTap.h */; };
 		DBB01A691DC1480700A7B188 /* MPKitCleverTap.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB01A671DC1480700A7B188 /* MPKitCleverTap.m */; };
-		DBB01A6B1DC1491D00A7B188 /* mParticle_Apple_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB01A6A1DC1491D00A7B188 /* mParticle_Apple_SDK.framework */; };
-		F94BD3CA2492E11E00FC144C /* CleverTapSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D076C317218E3DEE00185E1A /* CleverTapSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F94BD3CB2492E11E00FC144C /* mParticle_Apple_SDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBB01A6A1DC1491D00A7B188 /* mParticle_Apple_SDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F94BD3CC2492E11E00FC144C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94BD3C52492E0E400FC144C /* OCMock.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F94BD3CD2492E11E00FC144C /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94BD3C22492E0E400FC144C /* Nimble.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F94BD3CE2492E11E00FC144C /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94BD3C32492E0E400FC144C /* Quick.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F94BD3CF2492E11E00FC144C /* SDWebImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94BD3C42492E0E400FC144C /* SDWebImage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F9D946AA24A08D25009DAB4B /* mParticle_CleverTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB01A5B1DC1478A00A7B188 /* mParticle_CleverTap.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
@@ -29,20 +24,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F94BD3CA2492E11E00FC144C /* CleverTapSDK.framework in CopyFiles */,
-				F94BD3CB2492E11E00FC144C /* mParticle_Apple_SDK.framework in CopyFiles */,
-				F94BD3CC2492E11E00FC144C /* OCMock.framework in CopyFiles */,
-				F94BD3CD2492E11E00FC144C /* Nimble.framework in CopyFiles */,
-				F94BD3CE2492E11E00FC144C /* Quick.framework in CopyFiles */,
-				F94BD3CF2492E11E00FC144C /* SDWebImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		251DBA0D07A71504E1E5C8D5 /* Pods_mParticle_CleverTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mParticle_CleverTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38988B8DD7B0A19C3A722375 /* Pods-mParticle_CleverTapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mParticle_CleverTapTests.release.xcconfig"; path = "Target Support Files/Pods-mParticle_CleverTapTests/Pods-mParticle_CleverTapTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C206185738FE1B7A96426EC /* Pods-mParticle_CleverTapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mParticle_CleverTapTests.debug.xcconfig"; path = "Target Support Files/Pods-mParticle_CleverTapTests/Pods-mParticle_CleverTapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		478B7AE558F736458E485224 /* Pods-mParticle-CleverTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mParticle-CleverTap.debug.xcconfig"; path = "Target Support Files/Pods-mParticle-CleverTap/Pods-mParticle-CleverTap.debug.xcconfig"; sourceTree = "<group>"; };
+		53AF89622B48A13200664B6B /* mParticle_VersionToIntTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mParticle_VersionToIntTest.m; sourceTree = "<group>"; };
+		67DD41C16CA98EA024D6779E /* Pods_mParticle_CleverTapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mParticle_CleverTapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D071FD9A21A3A9700060F803 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D076C317218E3DEE00185E1A /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleverTapSDK.framework; path = Carthage/Build/iOS/CleverTapSDK.framework; sourceTree = "<group>"; };
 		D076C31D218E413700185E1A /* mParticle_CleverTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mParticle_CleverTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D076C31F218E413700185E1A /* mParticle_CleverTapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mParticle_CleverTapTests.m; sourceTree = "<group>"; };
 		D076C321218E413700185E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,12 +45,8 @@
 		DBB01A5F1DC1478A00A7B188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBB01A661DC1480700A7B188 /* MPKitCleverTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKitCleverTap.h; sourceTree = "<group>"; };
 		DBB01A671DC1480700A7B188 /* MPKitCleverTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKitCleverTap.m; sourceTree = "<group>"; };
-		DBB01A6A1DC1491D00A7B188 /* mParticle_Apple_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mParticle_Apple_SDK.framework; path = Carthage/Build/iOS/mParticle_Apple_SDK.framework; sourceTree = "<group>"; };
+		F912105A54E5628B1D9EC528 /* Pods-mParticle-CleverTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mParticle-CleverTap.release.xcconfig"; path = "Target Support Files/Pods-mParticle-CleverTap/Pods-mParticle-CleverTap.release.xcconfig"; sourceTree = "<group>"; };
 		F92C71612492E1BF00CA336E /* mParticle-CleverTap.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "mParticle-CleverTap.xctestplan"; sourceTree = "<group>"; };
-		F94BD3C22492E0E400FC144C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		F94BD3C32492E0E400FC144C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		F94BD3C42492E0E400FC144C /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
-		F94BD3C52492E0E400FC144C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D946AA24A08D25009DAB4B /* mParticle_CleverTap.framework in Frameworks */,
+				25EB6A0B851257A65EF0CD9D /* Pods_mParticle_CleverTapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D076C318218E3DEE00185E1A /* CleverTapSDK.framework in Frameworks */,
-				DBB01A6B1DC1491D00A7B188 /* mParticle_Apple_SDK.framework in Frameworks */,
+				1F580D937EEC122B7398C552 /* Pods_mParticle_CleverTap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D076C31F218E413700185E1A /* mParticle_CleverTapTests.m */,
+				53AF89622B48A13200664B6B /* mParticle_VersionToIntTest.m */,
 				F92C71612492E1BF00CA336E /* mParticle-CleverTap.xctestplan */,
 				D076C321218E413700185E1A /* Info.plist */,
 			);
@@ -93,12 +84,11 @@
 		DBB01A511DC1478A00A7B188 = {
 			isa = PBXGroup;
 			children = (
-				D076C317218E3DEE00185E1A /* CleverTapSDK.framework */,
-				DBB01A6A1DC1491D00A7B188 /* mParticle_Apple_SDK.framework */,
 				DBB01A5D1DC1478A00A7B188 /* mParticle-CleverTap */,
 				D076C31E218E413700185E1A /* mParticle_CleverTapTests */,
 				DBB01A5C1DC1478A00A7B188 /* Products */,
 				FF13226121878D9C002AA653 /* Frameworks */,
+				F65622099D3BE633CF8D27C2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,14 +112,23 @@
 			path = "mParticle-CleverTap";
 			sourceTree = "<group>";
 		};
+		F65622099D3BE633CF8D27C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				478B7AE558F736458E485224 /* Pods-mParticle-CleverTap.debug.xcconfig */,
+				F912105A54E5628B1D9EC528 /* Pods-mParticle-CleverTap.release.xcconfig */,
+				3C206185738FE1B7A96426EC /* Pods-mParticle_CleverTapTests.debug.xcconfig */,
+				38988B8DD7B0A19C3A722375 /* Pods-mParticle_CleverTapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FF13226121878D9C002AA653 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F94BD3C52492E0E400FC144C /* OCMock.framework */,
-				F94BD3C22492E0E400FC144C /* Nimble.framework */,
-				F94BD3C32492E0E400FC144C /* Quick.framework */,
-				F94BD3C42492E0E400FC144C /* SDWebImage.framework */,
 				D071FD9A21A3A9700060F803 /* XCTest.framework */,
+				251DBA0D07A71504E1E5C8D5 /* Pods_mParticle_CleverTap.framework */,
+				67DD41C16CA98EA024D6779E /* Pods_mParticle_CleverTapTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,10 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D076C325218E413700185E1A /* Build configuration list for PBXNativeTarget "mParticle_CleverTapTests" */;
 			buildPhases = (
+				34FE8D2D0FB4473CA60F9885 /* [CP] Check Pods Manifest.lock */,
 				D076C319218E413700185E1A /* Sources */,
 				D076C31A218E413700185E1A /* Frameworks */,
 				D076C31B218E413700185E1A /* Resources */,
 				F9F952872492DFB100BF8325 /* CopyFiles */,
+				BC0F6D126AE14D3E933955A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBB01A631DC1478A00A7B188 /* Build configuration list for PBXNativeTarget "mParticle-CleverTap" */;
 			buildPhases = (
+				27243376B79373C8AE987A26 /* [CP] Check Pods Manifest.lock */,
 				DBB01A561DC1478A00A7B188 /* Sources */,
 				DBB01A571DC1478A00A7B188 /* Frameworks */,
 				DBB01A581DC1478A00A7B188 /* Headers */,
@@ -196,7 +198,7 @@
 				TargetAttributes = {
 					D076C31C218E413700185E1A = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = A5J34NR598;
+						LastSwiftMigration = 1510;
 						ProvisioningStyle = Automatic;
 					};
 					DBB01A5A1DC1478A00A7B188 = {
@@ -242,12 +244,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27243376B79373C8AE987A26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mParticle-CleverTap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34FE8D2D0FB4473CA60F9885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mParticle_CleverTapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0F6D126AE14D3E933955A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mParticle_CleverTapTests/Pods-mParticle_CleverTapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mParticle_CleverTapTests/Pods-mParticle_CleverTapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mParticle_CleverTapTests/Pods-mParticle_CleverTapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D076C319218E413700185E1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D076C320218E413700185E1A /* mParticle_CleverTapTests.m in Sources */,
+				53F201D92B4893020030CA08 /* mParticle_CleverTapTests.m in Sources */,
+				53AF89632B48A13200664B6B /* mParticle_VersionToIntTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,21 +331,22 @@
 /* Begin XCBuildConfiguration section */
 		D076C326218E413700185E1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C206185738FE1B7A96426EC /* Pods-mParticle_CleverTapTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5J34NR598;
+				DEVELOPMENT_TEAM = 7596YH3S97;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = mParticle_CleverTapTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,27 +357,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clevertap.mParticle-CleverTapTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D076C327218E413700185E1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38988B8DD7B0A19C3A722375 /* Pods-mParticle_CleverTapTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5J34NR598;
+				DEVELOPMENT_TEAM = 7596YH3S97;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = mParticle_CleverTapTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clevertap.mParticle-CleverTapTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -441,6 +513,7 @@
 		};
 		DBB01A641DC1478A00A7B188 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478B7AE558F736458E485224 /* Pods-mParticle-CleverTap.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -468,6 +541,7 @@
 		};
 		DBB01A651DC1478A00A7B188 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F912105A54E5628B1D9EC528 /* Pods-mParticle-CleverTap.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
