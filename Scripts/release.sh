@@ -16,6 +16,7 @@ sed -i '' 's/\(^    s.version[^=]*= \).*/\1"'"$VERSION"'"/' mParticle-CleverTap.
 
 git add mParticle-CleverTap.podspec
 git add mParticle-CleverTap/MPKitCleverTap.m
+git add CHANGELOG.md
 git commit -m "chore(release): $VERSION [skip ci]
 
 $NOTES"
