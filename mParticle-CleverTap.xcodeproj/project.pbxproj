@@ -11,6 +11,7 @@
 		25EB6A0B851257A65EF0CD9D /* Pods_mParticle_CleverTapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DD41C16CA98EA024D6779E /* Pods_mParticle_CleverTapTests.framework */; };
 		53AF89632B48A13200664B6B /* mParticle_VersionToIntTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AF89622B48A13200664B6B /* mParticle_VersionToIntTest.m */; };
 		53F201D92B4893020030CA08 /* mParticle_CleverTapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D076C31F218E413700185E1A /* mParticle_CleverTapTests.m */; };
+		D3AEBD922BC42E77006BE379 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D3AEBD912BC42E77006BE379 /* PrivacyInfo.xcprivacy */; };
 		DBB01A601DC1478A00A7B188 /* mParticle_CleverTap.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB01A5E1DC1478A00A7B188 /* mParticle_CleverTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB01A681DC1480700A7B188 /* MPKitCleverTap.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB01A661DC1480700A7B188 /* MPKitCleverTap.h */; };
 		DBB01A691DC1480700A7B188 /* MPKitCleverTap.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB01A671DC1480700A7B188 /* MPKitCleverTap.m */; };
@@ -40,6 +41,7 @@
 		D076C31D218E413700185E1A /* mParticle_CleverTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mParticle_CleverTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D076C31F218E413700185E1A /* mParticle_CleverTapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mParticle_CleverTapTests.m; sourceTree = "<group>"; };
 		D076C321218E413700185E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3AEBD912BC42E77006BE379 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DBB01A5B1DC1478A00A7B188 /* mParticle_CleverTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mParticle_CleverTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB01A5E1DC1478A00A7B188 /* mParticle_CleverTap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mParticle_CleverTap.h; sourceTree = "<group>"; };
 		DBB01A5F1DC1478A00A7B188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		DBB01A511DC1478A00A7B188 = {
 			isa = PBXGroup;
 			children = (
+				D3AEBD912BC42E77006BE379 /* PrivacyInfo.xcprivacy */,
 				DBB01A5D1DC1478A00A7B188 /* mParticle-CleverTap */,
 				D076C31E218E413700185E1A /* mParticle_CleverTapTests */,
 				DBB01A5C1DC1478A00A7B188 /* Products */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3AEBD922BC42E77006BE379 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
