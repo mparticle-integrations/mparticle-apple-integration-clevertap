@@ -13,16 +13,17 @@ let package = Package(
     dependencies: [
       .package(name: "mParticle-Apple-SDK",
                url: "https://github.com/mParticle/mparticle-apple-sdk",
-               .upToNextMajor(from: "8.0.0")),
+               .upToNextMajor(from: "8.22.0")),
       .package(name: "CleverTapSDK",
                url: "https://github.com/CleverTap/clevertap-ios-sdk",
-               .upToNextMajor(from: "6.2.0")),
+               .upToNextMajor(from: "6.2.1")),
     ],
     targets: [
         .target(
             name: "mParticle-CleverTap",
             dependencies: ["mParticle-Apple-SDK", "CleverTapSDK"],
             path: "mParticle-CleverTap",
+            resources: [.process("PrivacyInfo.xcprivacy")],
             publicHeadersPath: "."
         ),
     ]
