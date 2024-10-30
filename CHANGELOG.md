@@ -1,3 +1,10 @@
+# [8.6.0](https://github.com/mparticle-integrations/mparticle-apple-integration-clevertap/compare/v8.5.0...v8.6.0) (2024-10-30)
+
+
+### Features
+
+* Update CleverTap to Latest ([#19](https://github.com/mparticle-integrations/mparticle-apple-integration-clevertap/issues/19)) ([4019226](https://github.com/mparticle-integrations/mparticle-apple-integration-clevertap/commit/40192263897e14ffae0d5aa5564dadb516c13298))
+
 # [8.5.0](https://github.com/mparticle-integrations/mparticle-apple-integration-clevertap/compare/v8.4.0...v8.5.0) (2024-05-07)
 
 
